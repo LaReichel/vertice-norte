@@ -1,0 +1,128 @@
+.wrapper{
+    background-color: rgb(45, 45, 45);
+}
+
+.h1 {
+    font-family: "Montserrat";
+    font-weight: 200;
+    font-size: 1.9em;
+}
+
+.h2 {
+    font-family: "Montserrat";
+    font-weight: 200;
+    font-size: 1.7em;
+    color: rgb(43, 64, 220);
+}
+
+.h3 {
+    font-family: "Montserrat";
+    font-weight: 200;
+    font-size: 1.5em;
+    color: rgb(43, 64, 220);
+}
+
+.h4 {
+    font-family: "Montserrat";
+    font-weight: 200;
+    font-size: 1em;
+    color:bisque;
+}
+.header {
+    float: right;
+    font-family: "Montserrat";
+    color: rgb(191, 171, 243);
+    padding-bottom: 35px;
+    padding-left: 50px;
+    margin: 50px 150px 0px 0px
+}
+
+.logo {
+    width: 200px;
+    margin-left: 50px;
+}
+
+.about-me {
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 20px;
+  color: #f2f2f2; /* texto claro si tu fondo es oscuro */
+}
+
+.about-container {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.about-text {
+  flex: 2; /* ocupa más espacio */
+  line-height: 1.5;
+  text-align: left;
+  font-family: "Montserrat";
+}
+
+.about-text p {
+  margin-bottom: 18px;
+}
+
+.about-text strong {
+    font-family: "Montserrat";
+    font-weight: 200;
+    font-size: 1em;
+    color:bisque;
+}
+
+.about-photo {
+  flex: 1; /* ocupa menos espacio */
+  display: flex;
+  justify-content: center;
+}
+
+.about-photo img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+.polaroid {
+  background-color: #fff;
+  padding: 10px 10px 30px;   /* espacio extra abajo para simular polaroid */
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+  display: inline-block;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.polaroid img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  display: block;
+  margin: 0 auto;
+}
+
+.polaroid .caption {
+  font-family: 'Courier New';
+  font-size: 1em;
+  margin-top: 10px;
+  padding-right: 10px;
+  color: #333;
+}
+
+.footer div .media {
+    width: 30px;
+    height: auto;
+    margin: 5px;
+}
+
+.footer-border {
+    border-top: 1px double #110ec6;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
