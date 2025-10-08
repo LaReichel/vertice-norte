@@ -354,3 +354,58 @@ gap: 20px;
   justify-content: flex-start !important;
 }
 }
+/* === FIX DEFINITIVO PARA HERO EN MOVIL === */
+@media (max-width: 820px){
+
+  /* 1) Asegura columna en el contenedor */
+  .content{
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 16px !important;
+    padding: 16px 12px !important;
+    margin: 32px 0 56px !important;
+  }
+
+  /* 2) Fuerza que TODOS los hijos ocupen 100% (por si hay wrappers) */
+  .content > *{
+    flex: 0 0 100% !important;
+    max-width: 680px !important;
+  }
+
+  /* 3) Box de texto a ancho completo */
+  .content .box-one{
+    width: 100% !important;
+    flex: 0 0 100% !important;
+    padding: 0 10px !important;
+    margin: 0 !important;
+    text-align: left !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+    hyphens: auto !important;
+    line-height: 1.45 !important;
+    float: none !important;            /* por si algo flota */
+  }
+
+  /* 4) Banner a ancho completo (selector robusto) */
+  .content .banner{
+    order: 2 !important;               /* texto arriba, banner abajo */
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    max-width: 680px !important;
+    padding: 0 !important;
+    margin: 8px 0 0 !important;
+  }
+
+  /* 5) Evita que algún div intermedio rompa el layout */
+  .content .banner img{
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+  }
+
+  /* 6) Tipos un pelín más contenidos */
+  .h1{ font-size: clamp(1.4rem, 6vw, 2rem) !important; }
+  .h2{ font-size: clamp(1.1rem, 5vw, 1.6rem) !important; }
+}
