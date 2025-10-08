@@ -291,41 +291,65 @@ gap: 20px;
   .footer-border { padding: 16px; gap: 10px; }
 }
 
-/* ======= FIX SOLO PARA MOVIL (hero) ======= */
+/* ===== FIX HERO Y "HOY EN DÍA" SOLO EN MÓVIL ===== */
 @media (max-width: 820px){
-  /* El contenedor del hero se apila y respira */
+
+  /* HERO */
   .content{
-    flex-direction: column;     /* apila texto y banner */
-    align-items: center;        /* centra el conjunto */
-    gap: 16px;                  /* espacio entre cajas */
-    padding: 16px 12px;
-    margin: 32px 0 56px;
+    display: flex !important;
+    flex-direction: column !important;   /* apilar */
+    align-items: center !important;
+    gap: 16px !important;
+    padding: 16px 12px !important;
+    margin: 32px 0 56px !important;
   }
 
-  /* El texto ocupa todo el ancho (adiós 42% en móvil) */
   .box-one{
-    width: 100%;
-    max-width: 680px;           /* límite cómodo */
-    padding: 0 8px;
-    margin: 0;
-    word-break: normal;         /* evita cortar palabras a lo loco */
-    overflow-wrap: normal;
-    hyphens: auto;
-    line-height: 1.45;
-    text-align: left;
+    width: 100% !important;
+    max-width: 680px !important;
+    padding: 0 10px !important;
+    margin: 0 !important;
+    text-align: left !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+    hyphens: auto !important;
+    line-height: 1.45 !important;
   }
 
-  /* El banner fluye a ancho completo debajo del texto */
-  .content div .banner{
-    order: 2;                   /* texto arriba, banner abajo */
-    width: 100%;
-    max-width: 680px;
-    height: auto;
-    padding: 0;                 /* quita el padding que lo encoge */
-    margin-top: 8px;
+  /* Ojo: apunta al mismo .banner que tienes dentro de .content */
+  .content .banner{
+    order: 2 !important;                /* texto arriba, banner abajo */
+    width: 100% !important;
+    max-width: 680px !important;
+    height: auto !important;
+    padding: 0 !important;
+    margin-top: 8px !important;
   }
 
   /* Títulos un poco más contenidos en móvil */
-  .h1{ font-size: clamp(1.4rem, 6vw, 2rem); }
-  .h2{ font-size: clamp(1.1rem, 5vw, 1.6rem); }
+  .h1{ font-size: clamp(1.4rem, 6vw, 2rem) !important; }
+  .h2{ font-size: clamp(1.1rem, 5vw, 1.6rem) !important; }
+
+  /* "HOY EN DÍA" (tu bloque .actualmente / .box-three) */
+  .actualmente{
+    flex-wrap: wrap !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 16px !important;
+    margin: 20px 16px !important;
+  }
+
+  .box-three{
+    margin: 40px 16px !important;
+    padding-left: 0 !important;
+    line-height: 1.5 !important;
+  }
+
+  .box-three .mockup{
+    width: 100% !important;
+    max-width: 360px !important;
+    height: auto !important;
+    margin: 8px 0 !important;
+    justify-content: flex-start !important;
+  }
 }
