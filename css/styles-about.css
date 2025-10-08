@@ -130,7 +130,7 @@
 /* ====== FIX RESPONSIVE ABOUT (parches mínimos) ====== */
 
 /* 0) Evitar que el header flotado invada el contenido */
-.about-me { clear: both; }
+/*.about-me { clear: both; }*/
 
 /* 1) Ajustes suaves en desktop/tablet grande */
 @media (max-width: 1200px){
