@@ -126,3 +126,86 @@
     align-items: center;
     gap: 20px;
 }
+
+/* ====== BASE SUAVE (por si no está) ====== */
+*, *::before, *::after { box-sizing: border-box; }
+img { max-width: 100%; height: auto; display: block; }
+html { scroll-behavior: smooth; }
+body { margin: 0; }
+
+/* Si el header es el mismo que en Home */
+.cf { clear: both; display:block; height:0; line-height:0; }
+@media (max-width: 820px){
+  .header { float:none; margin:24px 16px 0 16px; padding-left:0; }
+}
+
+/* ====== HERO ABOUT: texto + polaroid ====== */
+.about-hero{
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;  /* texto | foto (desktop) */
+  gap: 24px;
+  align-items: center;
+  margin: 32px auto;
+  max-width: 1100px;
+  padding: 0 16px;
+}
+
+.about-text{
+  color: #f6f1ff;        /* tu paleta */
+  line-height: 1.55;
+  font-family: "Montserrat", sans-serif;
+}
+
+.about-photo{
+  justify-self: end;     /* foto a la derecha en desktop */
+}
+
+/* Polaroid responsiva */
+.polaroid{
+  background: #fff;
+  color: #333;
+  padding: 10px 10px 16px;
+  width: 100%;
+  max-width: 380px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.35);
+  transform: rotate(-1.5deg);
+  border-radius: 4px;
+}
+.polaroid img{ border-radius: 3px; }
+.polaroid .caption{
+  margin-top: 8px; text-align: center; font-size: .95rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* En móvil: apila, texto arriba y foto abajo centrada */
+@media (max-width: 900px){
+  .about-hero{
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .about-photo{ justify-self: center; }
+}
+
+/* ====== BLOQUES (línea temporal / “algo de historia”) ====== */
+.about-blocks{
+  max-width: 1100px; margin: 24px auto; padding: 0 16px;
+  display: grid; gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.about-card{
+  background: rgba(197,63,255,0.18);
+  padding: 16px; border-radius: 12px;
+  color: #fff; font-family: "Montserrat", sans-serif;
+}
+@media (max-width: 1000px){
+  .about-blocks{ grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 640px){
+  .about-blocks{ grid-template-columns: 1fr; }
+}
+
+/* ====== CTA / BOTONES ====== */
+.btn{
+  display:inline-block; padding:10px 16px; border-radius:10px;
+  text-decoration:none; font-family:"Montserrat",sans-serif;
+}
