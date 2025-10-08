@@ -295,61 +295,62 @@ gap: 20px;
 @media (max-width: 820px){
 
   /* HERO */
-  .content{
-    display: flex !important;
-    flex-direction: column !important;   /* apilar */
-    align-items: center !important;
-    gap: 16px !important;
-    padding: 16px 12px !important;
-    margin: 32px 0 56px !important;
-  }
 
-  .box-one{
-    width: 100% !important;
-    max-width: 680px !important;
-    padding: 0 10px !important;
-    margin: 0 !important;
-    text-align: left !important;
-    word-break: normal !important;
-    overflow-wrap: normal !important;
-    hyphens: auto !important;
-    line-height: 1.45 !important;
-  }
+.content{
+  display: flex !important;
+  flex-direction: column !important;   /* apilar */
+  align-items: center !important;
+  gap: 16px !important;
+  padding: 16px 12px !important;
+  margin: 32px 0 56px !important;
+}
+
+.box-one{
+  width: 100% !important;
+  max-width: 680px !important;
+  padding: 0 10px !important;
+  margin: 0 !important;
+  text-align: left !important;
+  word-break: normal !important;
+  overflow-wrap: normal !important;
+  hyphens: auto !important;
+  line-height: 1.45 !important;
+}
 
   /* Ojo: apunta al mismo .banner que tienes dentro de .content */
-  .content .banner{
-    order: 2 !important;                /* texto arriba, banner abajo */
-    width: 100% !important;
-    max-width: 680px !important;
-    height: auto !important;
-    padding: 0 !important;
-    margin-top: 8px !important;
-  }
+.content .banner{
+  order: 2 !important;                /* texto arriba, banner abajo */
+  width: 100% !important;
+  max-width: 680px !important;
+  height: auto !important;
+  padding: 0 !important;
+  margin-top: 8px !important;
+}
 
   /* Títulos un poco más contenidos en móvil */
-  .h1{ font-size: clamp(1.4rem, 6vw, 2rem) !important; }
-  .h2{ font-size: clamp(1.1rem, 5vw, 1.6rem) !important; }
+.h1{ font-size: clamp(1.4rem, 6vw, 2rem) !important; }
+.h2{ font-size: clamp(1.1rem, 5vw, 1.6rem) !important; }
 
   /* "HOY EN DÍA" (tu bloque .actualmente / .box-three) */
-  .actualmente{
-    flex-wrap: wrap !important;
-    flex-direction: column !important;
-    align-items: flex-start !important;
-    gap: 16px !important;
-    margin: 20px 16px !important;
-  }
+.actualmente{
+  flex-wrap: wrap !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  gap: 16px !important;
+  margin: 20px 16px !important;
+}
 
-  .box-three{
-    margin: 40px 16px !important;
-    padding-left: 0 !important;
-    line-height: 1.5 !important;
-  }
+.box-three{
+  margin: 40px 16px !important;
+  padding-left: 0 !important;
+  line-height: 1.5 !important;
+}
 
-  .box-three .mockup{
-    width: 100% !important;
-    max-width: 360px !important;
-    height: auto !important;
-    margin: 8px 0 !important;
-    justify-content: flex-start !important;
-  }
+.box-three .mockup{
+  width: 100% !important;
+  max-width: 360px !important;
+  height: auto !important;
+  margin: 8px 0 !important;
+  justify-content: flex-start !important;
+}
 }
