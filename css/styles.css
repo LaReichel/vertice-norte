@@ -1,6 +1,7 @@
 .wrapper{ 
 	background-color: rgb(45, 45, 45);
-  width: 1200PX;
+  width: 1600PX;
+  margin: auto;
 } 
 
 .h1 { 
