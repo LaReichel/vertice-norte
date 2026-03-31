@@ -44,7 +44,7 @@ El sitio incluye secciones orientadas a presentar mi perfil y experiencia, entre
 
 Puedes visitar el sitio en el siguiente enlace:
 
-**[Agregar aquí el enlace de tu GitHub Pages](https://tu-enlace-aqui.github.io/)**
+https://lareichel.github.io/vertice-norte/
 
 ## Enfoque profesional
 
